@@ -1,9 +1,8 @@
-FROM openjdk:11.0.11
+FROM openjdk:13.0.2
 
-ARG liquibase_version=4.2.2
-# https://github.com/liquibase/liquibase/releases/download/v4.2.2/liquibase-4.2.2.tar.gz
-ARG liquibase_download_url=https://github.com/liquibase/liquibase/releases/download/v${liquibase_version}
-ARG tarfile=liquibase-${liquibase_version}.tar.gz
+ARG liquibase_version=3.6.3
+ARG liquibase_download_url=https://github.com/liquibase/liquibase/releases/download/liquibase-parent-${liquibase_version}
+ARG tarfile=liquibase-${liquibase_version}-bin.tar.gz
 
 WORKDIR /workspace
 
