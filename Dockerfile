@@ -1,6 +1,7 @@
 FROM openjdk:11.0.11
 
-ARG liquibase_version=4.7.1
+ARG liquibase_version=4.2.2
+# https://github.com/liquibase/liquibase/releases/download/v4.2.2/liquibase-4.2.2.tar.gz
 ARG liquibase_download_url=https://github.com/liquibase/liquibase/releases/download/v${liquibase_version}
 ARG tarfile=liquibase-${liquibase_version}.tar.gz
 
