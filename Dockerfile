@@ -1,4 +1,4 @@
-FROM openjdk:11.0.3
+FROM openjdk:13.0.2
 
 ARG liquibase_version=3.6.3
 ARG liquibase_download_url=https://github.com/liquibase/liquibase/releases/download/liquibase-parent-${liquibase_version}
